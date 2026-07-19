@@ -1,0 +1,19 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "first tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:desktop:chrome": "cypress run --config-file cypress.config.js --browser chrome",
+    "cy:desktop:firefox": "cypress open --config-file cypress.config.js --browser firefox",
+    "cy:mobile:chrome": "cypress run --config-file cypress.mobile.config.js --browser chrome",
+    "cy:mobile:firefox": "cypress open --config-file cypress.mobile.config.js --browser firefox"
+  },
+  "author": "Valentin Knyshov",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "15.18.1"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}
