@@ -4,10 +4,10 @@
   "description": "first tests with Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:desktop:chrome": "cypress run --config-file cypress.config.js --browser chrome",
-    "cy:desktop:firefox": "cypress open --config-file cypress.config.js --browser firefox",
-    "cy:mobile:chrome": "cypress run --config-file cypress.mobile.config.js --browser chrome",
-    "cy:mobile:firefox": "cypress open --config-file cypress.mobile.config.js --browser firefox"
+    "cy:run:desktop:chrome": "cypress run --config-file cypress.config.js --browser chrome --headed",
+    "cy:run:desktop:firefox": "cypress run --config-file cypress.config.js --browser firefox --headless",
+    "cy:run:mobile:chrome": "cypress run --config-file cypress.mobile.config.js --browser chrome --headed",
+    "cy:run:mobile:firefox": "cypress run --config-file cypress.mobile.config.js --browser firefox --headless"
   },
   "author": "Valentin Knyshov",
   "license": "ISC",
